@@ -1,0 +1,37 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  justify-content: left;
+}
+
+.form__journalDate {
+  display: flex;
+  flex: column;
+  justify-content: left;
+
+}
+
+.form__journalEntry {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+
+}
+
+.form__concepts {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+
+}
+
+.form__mood {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+
+}
+
+
+
