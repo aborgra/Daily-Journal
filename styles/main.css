@@ -45,7 +45,7 @@ h1 {
 
 
 
-#journalDate:focus {
+/* #journalDate:focus {
   border-color: rgb(148, 148, 146);
 }
 
@@ -59,7 +59,7 @@ h1 {
 
 #mood:focus {
   border-color: rgb(214, 83, 78); 
-}
+} */
 
 .form__journalDate {
   border-radius: 2pt;
