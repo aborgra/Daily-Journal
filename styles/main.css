@@ -1,37 +1,75 @@
+.content {
+  /* background-image: linear-gradient(to right, rgb(235, 123, 175), #a4daf0); */
+  display: flex;
+  flex-direction: column;
+}
+
 .form {
   display: flex;
   flex-direction: column;
   max-width: 30%;
   justify-content: left;
+  margin-left: 50pt;
+  margin-bottom: 50pt;
+  background: #ff39f2;
+  background: -moz-linear-gradient(top, #ff39f2 0%, #7332a5 50%, #5fe9ff 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #ff39f2 0%,
+    #7332a5 50%,
+    #5fe9ff 100%
+  );
+  background: linear-gradient(to bottom, #ff39f2 0%, #7332a5 50%, #5fe9ff 100%);
 }
 
+h1 {
+  font-family: sans-serif, Charcoal, sans-serif;
+  font-size: 60px;
+  letter-spacing: 1.4px;
+  word-spacing: 3px;
+  color: #8f09b8;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+  margin-left: 25pt;
+  margin-top: 20pt;
+  text-shadow: 9px 2px 3px #777777;
+}
 .form__journalDate {
   display: flex;
   flex: column;
   justify-content: left;
-
+  margin: 2pt;
+  flex-basis: 10%;
 }
 
 .form__journalEntry {
   display: flex;
   flex-direction: column;
   justify-content: left;
-
+  margin: 2pt;
 }
 
 .form__concepts {
   display: flex;
   flex-direction: column;
   justify-content: left;
-
+  margin: 2pt;
 }
 
 .form__mood {
   display: flex;
   flex-direction: column;
   justify-content: left;
-
+  margin: 2pt;
 }
 
-
-
+.entryLog {
+  display: flex;
+  flex-direction: column;
+}
+.journalEntry {
+  flex-basis: 20%;
+  border-bottom: 1pt solid black;
+  margin: 20pt;
+}
