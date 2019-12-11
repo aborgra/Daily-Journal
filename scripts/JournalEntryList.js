@@ -13,7 +13,6 @@ const entryLog = document.querySelector("#entryLog");
 const EntryListComponent = () => {
   // Use the journal entry data from the data provider component
   const entries = useJournalEntries();
-
   entryLog.innerHTML += `
         ${entries
           .map(entry => {

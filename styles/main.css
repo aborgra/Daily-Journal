@@ -11,6 +11,8 @@
   justify-content: left;
   margin-left: 50pt;
   margin-bottom: 50pt;
+  border: 3pt solid gray;
+  border-radius: 3pt;
   /* background: #ff39f2; */
   /* background: -moz-linear-gradient(top, #ff39f2 0%, #7332a5 50%, #5fe9ff 100%); */
   /* background: -webkit-linear-gradient( */
