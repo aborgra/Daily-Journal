@@ -15,15 +15,20 @@ const EntryListComponent = () => {
   // Use the journal entry data from the data provider component
   const entries = useJournalEntries()
 
+
+// Delete journal entry event listener
   eventHub.addEventListener("click", clickEvent => {
     if (clickEvent.target.id.startsWith("deleteEntry--")) {
         const [prefix, id] = clickEvent.target.id.split("--")
        deleteEntry(id).then( 
-         () => getJournalEntries()).then(
-        () => renderEntries(useJournalEntries()) )
+        () => {
+          const newNotes = useJournalEntries()
+          renderEntries(newNotes)} )
     }
   })
 
+
+// Save entry event listener
   eventHub.addEventListener("click", saveEvent => {
     if (saveEvent.target.id === "saveButton") {
       const date = document.querySelector("#journalDate").value
@@ -32,17 +37,14 @@ const EntryListComponent = () => {
       const mood = document.querySelector("#mood").value
  
       const message =  {
-         
           date: date,
           concept: concept,
           entry: entry,
           mood: mood
         }
       saveEntry(message).then( () => {
-        
          entryLog.innerHTML=""
          renderEntries(useJournalEntries())
-      
       })}
   })
 

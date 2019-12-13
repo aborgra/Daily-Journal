@@ -27,13 +27,6 @@
       "entry": "Used GET POST and DELETE functions to update API",
       "mood": "happy",
       "id": 4
-    },
-    {
-      "date": "2019-09-01",
-      "concept": "test",
-      "entry": "test",
-      "mood": "happy",
-      "id": 5
     }
   ]
 }
