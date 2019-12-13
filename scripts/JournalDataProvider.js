@@ -13,9 +13,6 @@ const getJournalEntries = () => {
     .then(entries => {
       console.log(entries)
 
-        // What should happen when we finally have the array?
-   
-  
   journalEntries = entries.slice().sort(
     (currentEntry, nextEntry) =>
       Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
@@ -25,7 +22,7 @@ const getJournalEntries = () => {
 
 
 export const saveEntry = entry => {
-  fetch("http://localhost:3000/entries", {
+  return fetch("http://localhost:3000/entries", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -33,5 +30,14 @@ export const saveEntry = entry => {
     body: JSON.stringify(entry)
   }).then(getJournalEntries);
 };
+
+
+export const deleteEntry = noteId => {
+  return fetch(`http://localhost:3000/entries/${noteId}`, {
+      method: "DELETE"
+  })
+      .then(getJournalEntries)
+}
+
 
 export default getJournalEntries

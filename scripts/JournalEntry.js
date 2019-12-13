@@ -9,6 +9,8 @@ const JournalEntryComponent = entry => {
          <div>Concepts Covered: ${entry.concept}</div>
          <div>Journal Entry: ${entry.entry}</div>
          <div>Mood: ${entry.mood}</div>
+         <button id="deleteEntry--${entry.id}">Delete</button>
+
       </section>
       <br>
   `;

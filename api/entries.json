@@ -22,58 +22,18 @@
       "mood": "Happy"
     },
     {
-      "detail": {
-        "date": "2019-12-02",
-        "concept": "j",
-        "entry": "feiowanvioe",
-        "mood": {
-          "0": {},
-          "1": {},
-          "2": {},
-          "3": {}
-        }
-      },
+      "date": "2019-12-13",
+      "concept": "GET POST DELETE",
+      "entry": "Used GET POST and DELETE functions to update API",
+      "mood": "happy",
       "id": 4
     },
     {
-      "detail": {
-        "date": "2019-12-02",
-        "concept": "j",
-        "entry": "feiowanvioe",
-        "mood": {
-          "0": {},
-          "1": {},
-          "2": {},
-          "3": {}
-        }
-      },
-      "id": 5
-    },
-    {
-      "date": "2019-12-10",
-      "concept": "event listeners",
-      "entry": "Ugh",
-      "mood": {
-        "0": {},
-        "1": {},
-        "2": {},
-        "3": {}
-      },
-      "id": 6
-    },
-    {
-      "date": "2019-12-01",
-      "concept": "js",
-      "entry": "learning function",
-      "mood": "proud",
-      "id": 7
-    },
-    {
-      "date": "2019-12-19",
-      "concept": "demo",
-      "entry": "demo",
+      "date": "2019-09-01",
+      "concept": "test",
+      "entry": "test",
       "mood": "happy",
-      "id": 8
+      "id": 5
     }
   ]
 }

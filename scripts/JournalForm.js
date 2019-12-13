@@ -1,12 +1,12 @@
-import { saveEntry } from "./JournalDataProvider.js"
-
+import getJournalEntries, { saveEntry } from "./JournalDataProvider.js"
+import renderEntries from "./JournalEntryList.js";
 
 
 const contentTarget = document.querySelector(".entryForm")
 const eventHub = document.querySelector(".container")
 
 export const JournalFormComponent = () => {
-  
+  const render = () => {
     contentTarget.innerHTML = `
 <form class="form" action="">
     <fieldset class="form__journalDate">
@@ -36,26 +36,12 @@ export const JournalFormComponent = () => {
     </fieldset>
   </form>`
   }
+  render()
+  
 
- eventHub.addEventListener("click", saveEvent => {
-   if (saveEvent.target.id === "saveButton") {
-     const date = document.querySelector("#journalDate").value
-     const concept = document.querySelector("#conceptsCovered").value
-     const entry = document.querySelector("#journalEntry").value
-     const mood = document.querySelector("#mood").value
 
-     const message =  {
-        
-         date: date,
-         concept: concept,
-         entry: entry,
-         mood: mood
-
-       
-     }
-     saveEntry(message)
-   }
- })
+}
+ 
   
  
  

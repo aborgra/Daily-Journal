@@ -3,5 +3,5 @@ import getJournalEntries from "./JournalDataProvider.js";
 import { JournalFormComponent } from "./JournalForm.js";
 
 JournalFormComponent()
-EntryListComponent();
+// EntryListComponent();
 getJournalEntries().then(EntryListComponent)
