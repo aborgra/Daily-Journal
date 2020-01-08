@@ -9,22 +9,20 @@ export const JournalFormComponent = () => {
   const render = () => {
     contentTarget.innerHTML = `
 <form class="form" action="">
-    <fieldset class="form__journalDate">
-      <label for="journalDate">Date of Entry</label>
-      <input type="date" name="journalDate" id="journalDate">
+<div class="form-group">
+
+    <fieldset class="form__journalDate form-group">
+      <input type="date" name="journalDate" class="form-control" id="journalDate">
     </fieldset>
-    <fieldset class="form__concepts">
-      <label for="concepts">Concepts Covered</label>
-      <input type="text" name="conceptsCovered" id="conceptsCovered">
+    <fieldset class="form__concepts form-group">
+      <input type="text" name="conceptsCovered" class="form-control" id="conceptsCovered" placeholder="Concepts Covered">
     </fieldset>
-    <fieldset class="form__journalEntry">
-      <label for="journalEntry">Journal Entry<label>
-        <br>
-          <textarea name=" journalEntry" id="journalEntry" cols="30" rows="10"></textarea>
+    <fieldset class="form__journalEntry form-group">
+          <textarea name=" journalEntry" class="form-control"id="journalEntry" cols="30" rows="10" placeholder="Journal Entry"></textarea>
     </fieldset>
-    <fieldset class="form__mood">
-      <label for="mood">Mood</label>
-      <select name="mood" id="mood">
+    <fieldset class="form__mood form-group">
+      <select name="mood" id="mood" class="form-control">
+        <option value="" disabled selected hidden>Select Mood</option>
         <option value="happy">Happy</option>
         <option value="proud">Proud</option>
         <option value="sad">Sad</option>
@@ -32,9 +30,12 @@ export const JournalFormComponent = () => {
       </select>
     </fieldset>
     <fieldset class="form__button">
-      <button type="button" id="saveButton">Record Journal Entry</button>
+      <button type="button" id="saveButton" class="button btn btn-primary">Record Journal Entry</button>
     </fieldset>
-  </form>`
+    </div>
+  </form>
+  <br>
+  `
   }
   render()
   

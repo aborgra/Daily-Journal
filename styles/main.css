@@ -1,6 +1,6 @@
-.content {
-  /* background-image: linear-gradient(to right, rgb(235, 123, 175), #a4daf0); */
-  display: flex;
+/* .content {
+  /* background-image: linear-gradient(to right, rgb(235, 123, 175), #a4daf0);
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -56,7 +56,7 @@ h1 {
   border-color: rgb(214, 83, 78); 
 } */
 
-.form__journalDate {
+/* .form__journalDate {
   border-radius: 2pt;
 
 }
@@ -74,9 +74,9 @@ h1 {
   justify-content: left;
   margin: 2pt;
   border-radius: 2pt;
-}
+} */ 
 
-.form__mood {
+/* .form__mood {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -92,9 +92,26 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 50%;
-}
-.journalEntry {
+} */
+/* .journalEntry {
   flex-basis: 20%;
   border-bottom: 1pt solid black;
   margin: 20pt;
+} */ 
+.button {
+  border-radius: 4pt
 }
+
+.button:hover {
+  color: white;
+  background-color: rgb(54, 54, 54);
+  border-radius: 4pt
+}
+
+.form {
+  border: 1px solid black;
+  box-shadow:         10px 10px 5px 6px rgb(138, 137, 137);
+  padding: 10pt;
+  border-radius: 2pt;
+}
+

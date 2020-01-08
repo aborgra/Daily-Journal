@@ -1,18 +1,11 @@
 {
   "entries": [
     {
-      "id": 1,
-      "date": "11/13/2019",
-      "concept": "HTML & CSS",
-      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-      "mood": "Happy"
-    },
-    {
+      "date": "11/25/2019",
+      "concept": "REAL TEST JavaScript",
+      "entry": "REALLY REAL TEST We started talking about JavaScript and how to use it in our HTML",
       "id": 2,
-      "date": "11/22/2019",
-      "concept": "JavaScript",
-      "entry": "We started talking about JavaScript and how to use it in our HTML",
-      "mood": "Happy"
+      "mood": "proud"
     },
     {
       "id": 3,
@@ -27,6 +20,20 @@
       "entry": "Used GET POST and DELETE functions to update API",
       "mood": "happy",
       "id": 4
+    },
+    {
+      "date": "2020-01-07",
+      "concept": "Capstone Projects",
+      "entry": "Watched Cohort 36 capstone presentations",
+      "mood": "happy",
+      "id": 5
+    },
+    {
+      "date": "2020-01-07",
+      "concept": "PUT Method and Bootstrap",
+      "entry": "Mostly working CRUD and learned Bootstrap",
+      "id": 6,
+      "mood": "proud"
     }
   ]
 }
