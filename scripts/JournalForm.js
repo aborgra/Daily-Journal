@@ -23,10 +23,10 @@ export const JournalFormComponent = () => {
     <fieldset class="form__mood form-group">
       <select name="mood" id="mood" class="form-control">
         <option value="" disabled selected hidden>Select Mood</option>
-        <option value="happy">Happy</option>
-        <option value="proud">Proud</option>
-        <option value="sad">Sad</option>
-        <option value="frustrated">Frustrated</option>
+        <option value="Happy">Happy</option>
+        <option value="Proud">Proud</option>
+        <option value="Sad">Sad</option>
+        <option value="Frustrated">Frustrated</option>
       </select>
     </fieldset>
     <fieldset class="form__button">

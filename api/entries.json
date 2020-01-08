@@ -5,7 +5,7 @@
       "concept": "REAL TEST JavaScript",
       "entry": "REALLY REAL TEST We started talking about JavaScript and how to use it in our HTML",
       "id": 2,
-      "mood": "proud"
+      "mood": "Proud"
     },
     {
       "id": 3,
@@ -18,14 +18,14 @@
       "date": "2019-12-13",
       "concept": "GET POST DELETE",
       "entry": "Used GET POST and DELETE functions to update API",
-      "mood": "happy",
+      "mood": "Happy",
       "id": 4
     },
     {
       "date": "2020-01-07",
       "concept": "Capstone Projects",
       "entry": "Watched Cohort 36 capstone presentations",
-      "mood": "happy",
+      "mood": "Happy",
       "id": 5
     },
     {
@@ -33,7 +33,14 @@
       "concept": "PUT Method and Bootstrap",
       "entry": "Mostly working CRUD and learned Bootstrap",
       "id": 6,
-      "mood": "proud"
+      "mood": "Proud"
+    },
+    {
+      "date": "2020-01-08",
+      "concept": "Radio Buttons and Filtering",
+      "entry": "Radio Buttons and Filtering",
+      "mood": "Proud",
+      "id": 7
     }
   ]
 }
