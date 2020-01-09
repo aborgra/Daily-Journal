@@ -44,10 +44,10 @@
     },
     {
       "date": "2020-01-08",
-      "concept": "Search Capabilities",
-      "entry": "Working search capabilities and finished Daily Journal",
-      "mood": "Proud",
-      "id": 8
+      "concept": "Testing",
+      "entry": "Testing",
+      "id": 8,
+      "mood": "Proud"
     }
   ]
 }

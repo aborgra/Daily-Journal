@@ -24,7 +24,7 @@ return `
   <label for="mood" class="text-muted">Date:</label>
   </div>
       <select name="mood" id="editMood" class="form-control">
-        <option value="" disabled selected hidden>Select Mood</option>
+        <option value="${entry.mood}" disabled selected hidden>${entry.mood}</option>
         <option value="Happy">Happy</option>
         <option value="Proud">Proud</option>
         <option value="Sad">Sad</option>
@@ -51,7 +51,7 @@ eventHub.addEventListener("click", clickEvent => {
     const editedNoteId = document.querySelector("#editEntryId").value
     const editedNoteDate = document.querySelector("#editEntryDate").innerHTML
     const editedConcept = document.querySelector("#editConceptCovered").value
-    const editedMood = document.querySelector("#editMood").innerHTML
+    const editedMood = document.querySelector("#editMood").value
 
     console.log("edited entry save button clicked")
 

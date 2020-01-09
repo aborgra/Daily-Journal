@@ -18,6 +18,10 @@ const MoodFilter = () => {
             <input type="radio" id="moodChoice4"
               name="moodFilter" value="Frustrated">
             <label for="contactChoice4">Frustrated</label>
+            <input type="radio" id="moodChoice5"
+             name="moodFilter" value="All">
+             <label for="contactChoice5">All</label>
+
       </fieldset>
       <fieldset class="fieldset">
         <input type="search" id="searchField" placeholder="Search Journal Entries">

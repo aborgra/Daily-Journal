@@ -72,6 +72,9 @@ const EntryListComponent = () => {
     console.log("mood event heard")
     const selectedMood = event.detail.mood
     const allEntries = useJournalEntries()
+    if(selectedMood === "All"){
+      renderEntries(allEntries)
+    }else{
     const matchingEntries = allEntries.filter(entry => {
       if(entry.mood === selectedMood){
         return entry
@@ -80,6 +83,7 @@ const EntryListComponent = () => {
     if(matchingEntries.length === 0){
       alert("No matching Journal Entries")}
       else{renderEntries(matchingEntries)}
+    }
   })
 
 eventHub.addEventListener("searchInitiated", event => {
