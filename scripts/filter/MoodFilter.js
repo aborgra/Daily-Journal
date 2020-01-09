@@ -41,8 +41,16 @@ eventHub.addEventListener("click", event => {
 })
 
 eventHub.addEventListener ("keypress", event => {
-  if(event.keycode == 13 && document.querySelector("#searchField").innerHTML != "") {
+  if(event.keyCode === 13 && document.querySelector("#searchField").value != "") {
     console.log ("search entered")
+    const searchCriteria = document.querySelector("#searchField").value
+
+    const message = new CustomEvent("searchInitiated", {
+      detail: {
+        data: searchCriteria
+      }
+    })
+    eventHub.dispatchEvent(message)
   }
 })
 export default MoodFilter

@@ -67,6 +67,7 @@ const EntryListComponent = () => {
     editEntry(clickEvent.detail).then(() => renderEntries(useJournalEntries()))
   })
 
+
   eventHub.addEventListener("filterMoodChecked", event => {
     console.log("mood event heard")
     const selectedMood = event.detail.mood
@@ -80,6 +81,22 @@ const EntryListComponent = () => {
       alert("No matching Journal Entries")}
       else{renderEntries(matchingEntries)}
   })
+
+eventHub.addEventListener("searchInitiated", event => {
+  const searchData = event.detail.data
+  const allEntries = useJournalEntries()
+  let matchingEntries = []
+
+  for (const entry of allEntries) {
+    for (const value of Object.values(entry)){
+      if(value.toString().includes(searchData) && !(matchingEntries.includes(entry))) {
+        matchingEntries.push(entry)
+      }
+    }
+  }
+  renderEntries(matchingEntries)
+
+})
 
   const renderEntries = (entries) => {
   entryLog.innerHTML = `
