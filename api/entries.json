@@ -29,25 +29,11 @@
       "id": 5
     },
     {
-      "date": "2020-01-07",
-      "concept": "PUT Method and Bootstrap",
-      "entry": "Mostly working CRUD and learned Bootstrap",
-      "id": 6,
-      "mood": "Proud"
-    },
-    {
       "date": "2020-01-08",
       "concept": "Radio Buttons and Filtering",
       "entry": "Radio Buttons and Filtering",
       "mood": "Proud",
       "id": 7
-    },
-    {
-      "date": "2020-01-08",
-      "concept": "Testing",
-      "entry": "Testing",
-      "id": 8,
-      "mood": "Proud"
     }
   ]
 }
