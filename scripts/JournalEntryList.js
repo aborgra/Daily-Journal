@@ -94,7 +94,9 @@ eventHub.addEventListener("searchInitiated", event => {
       }
     }
   }
-  renderEntries(matchingEntries)
+  if (matchingEntries.length > 0) {
+    renderEntries(matchingEntries)
+  } else {alert("No Matching Journal Entries")}
 
 })
 

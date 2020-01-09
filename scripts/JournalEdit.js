@@ -33,10 +33,17 @@ return `
   </fieldset>
   </div>
 </form>
-  <button id="saveEditedEntry--${entry.id}">Save</button>
+  <button class="form__button button btn btn-primary" id="saveEditedEntry--${entry.id}">Save</button>
+  <button class="form__button button btn btn-secondary" id="closeEdit">Cancel</button>
 
 `
 }
+eventHub.addEventListener("click", event => {
+  if(event.target.id.startsWith("closeEdit")) {
+    const dialog = document.querySelector(".dialog__editForm")
+    dialog.close()
+  }
+})
 
 eventHub.addEventListener("click", clickEvent => {
   if(clickEvent.target.id.startsWith("saveEditedEntry--")) {
